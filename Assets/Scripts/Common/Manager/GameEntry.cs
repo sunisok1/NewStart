@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Assets.Scripts.Common.UI;
 using Assets.Scripts.Common.Utils;
 
 namespace Assets.Scripts.Common.Manager
@@ -8,9 +9,9 @@ namespace Assets.Scripts.Common.Manager
     {
         private readonly Dictionary<Type, ManagerBase> Managers = new();
 
-        private void Awake()
+        virtual protected void Awake()
         {
-
+            GetManager<UIManager>().OpenUI<BeginUI>();
         }
 
         /// <summary>
