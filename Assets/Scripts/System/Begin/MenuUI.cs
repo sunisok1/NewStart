@@ -1,4 +1,6 @@
+using Assets.Scripts.Common.Manager;
 using Assets.Scripts.Common.UI;
+using Assets.Scripts.Game;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,7 +18,6 @@ public class MenuUI : UIBase
     private void OnStartGameButtonClick()
     {
         Debug.Log("Start Game Button Clicked!");
-
-        // 在这里可以添加开始游戏的逻辑
+        GameEntry.GameManager.ChangeGameState(GameManager.GameState.Game);
     }
 }

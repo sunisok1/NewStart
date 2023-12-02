@@ -44,12 +44,6 @@ namespace Assets.Scripts.Game
         {
             // Add a player to the list
             playerList.AddLast(player);
-
-            // If the player list was empty, set the current player to the added player
-            if (playerList.Count == 1)
-            {
-                currentPlayerNode = playerList.First;
-            }
         }
 
         public void RemovePlayer(Player player)

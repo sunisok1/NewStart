@@ -67,6 +67,14 @@ namespace Assets.Scripts.Common.UI
         {
             PopFromStack();
         }
+
+        public void CloseAll()
+        {
+            while (currentUI != null)
+            {
+                CloseCurrent();
+            }
+        }
         #endregion
 
         #region 工具方法
@@ -162,12 +170,12 @@ namespace Assets.Scripts.Common.UI
             {
                 // 如果当前栈是Pop，那么currentUI就是Noraml栈中的最后一个元素，其余同理
                 // 另外，因为不同类型的UI之间也不会相互关闭，所以我们也只需要解冻就好
-                if (stack == allPopUpUI)
+                if (stack == allPopUpUI && allNormalUI.Count > 0)
                 {
                     currentUI = allNormalUI.Peek();
                     currentUI.OnUnFreeze();
                 }
-                else if (stack == allNormalUI)
+                else if (stack == allNormalUI && allFixedUI.Count > 0)
                 {
                     currentUI = allFixedUI.Peek();
                     currentUI.OnUnFreeze();

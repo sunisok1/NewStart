@@ -5,7 +5,7 @@ using Assets.Scripts.Common.Utils;
 
 namespace Assets.Scripts.Common.Manager
 {
-    public class GameEntry : MonoSingleton<GameEntry>
+    public partial class GameEntry : MonoSingleton<GameEntry>
     {
         private static readonly Dictionary<Type, ManagerBase> Managers = new();
 

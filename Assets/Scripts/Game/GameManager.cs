@@ -1,24 +1,21 @@
 using Assets.Scripts.Common.Manager;
 using Assets.Scripts.Common.UI;
 using Assets.Scripts.Common.Utils;
+using Assets.Scripts.Game.Core;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Game
 {
-    public class GameManager : MonoSingleton<GameManager>
+    public class GameManager : ManagerBase
     {
         public enum GameState
         {
-            Menu,
-            InGame
+            Start,
+            Game
             // Add more states as needed
         }
 
-        private void Start()
-        {
-            GameEntry.GetManager<UIManager>().OpenUI<MenuUI>();
-        }
 
         public GameState CurrentGameState { get; private set; }
 
@@ -27,10 +24,20 @@ namespace Assets.Scripts.Game
         {
             CurrentGameState = newState;
 
-            // Load the scene based on the game state
-            SceneManager.LoadScene(newState.ToString());
-
+            GameEntry.UIManager.CloseAll();
             // You can perform additional actions or setup based on the game state here
+            switch (newState)
+            {
+                case GameState.Start:
+                    GameEntry.UIManager.OpenUI<MenuUI>();
+                    break;
+                case GameState.Game:
+                    MapSystem gridSystem = Resources.Load<MapSystem>("Prefabs/Core/Map/GridSystem");
+                    Object.Instantiate(gridSystem.gameObject);
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
