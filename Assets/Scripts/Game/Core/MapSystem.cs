@@ -5,8 +5,10 @@ namespace Assets.Scripts.Game.Core
 {
     public class MapSystem : MonoBehaviour
     {
-        [SerializeField] Tilemap tilemap;
-        [SerializeField] TileBase tileBase;
+        [SerializeField] Tilemap background;
+        [SerializeField] Tilemap playersContainer;
+        [SerializeField] TileBase bgTile;
+        [SerializeField] TileBase playerTile;
         [SerializeField] int width = 20;
         [SerializeField] int height = 20;
 
@@ -23,7 +25,10 @@ namespace Assets.Scripts.Game.Core
                 for (int y = 0; y < height; y++)
                 {
                     Vector3Int cellPosition = new(x, y, 0);
-                    tilemap.SetTile(cellPosition, tileBase);
+                    background.SetTile(cellPosition, bgTile);
+                    GameObject instantiatedObject = background.GetInstantiatedObject(cellPosition);
+                    GridSingle gridSingle = instantiatedObject.GetComponent<GridSingle>();
+                    gridSingle.UpdateInfomation(cellPosition);
                 }
             }
         }

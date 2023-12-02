@@ -23,7 +23,7 @@ public class ViewConst
     public const string Prefabs_Core = "Prefabs/Core";
     public const string Prefabs_Core_Map = "Prefabs/Core/Map";
     public const string Prefabs_Core_Map_GridSingle = "Prefabs/Core/Map/GridSingle";
-    public const string Prefabs_Core_Map_GridSystem = "Prefabs/Core/Map/GridSystem";
+    public const string Prefabs_Core_Map_MapSystem = "Prefabs/Core/Map/MapSystem";
     public const string Prefabs_hp = "Prefabs/hp";
     public const string Prefabs_Unit = "Prefabs/Unit";
     public const string UI = "UI";
