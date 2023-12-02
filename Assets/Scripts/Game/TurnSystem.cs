@@ -37,7 +37,7 @@ namespace Assets.Scripts.Game
             currentPlayerNode = currentPlayerNode.Next ?? playerList.First;
 
             // You can perform any actions related to the turn change here
-            Debug.Log($"Next turn: {CurrentPlayer.name}");
+            Debug.Log($"Next turn: {CurrentPlayer.data}");
         }
 
         public void AddPlayer(Player player)

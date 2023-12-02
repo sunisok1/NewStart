@@ -32,8 +32,11 @@ namespace Assets.Scripts.Game
                     GameEntry.UIManager.OpenUI<MenuUI>();
                     break;
                 case GameState.Game:
-                    MapSystem gridSystem = Resources.Load<MapSystem>("Prefabs/Core/Map/GridSystem");
+                    MapSystem gridSystem = Resources.Load<MapSystem>(ViewConst.Prefabs_Core_Map_GridSystem);
                     Object.Instantiate(gridSystem.gameObject);
+                    TurnSystem.Instance.AddPlayer(PlayerFactory.CreatePlayer("测试_1"));
+                    TurnSystem.Instance.AddPlayer(PlayerFactory.CreatePlayer("测试_2"));
+                    TurnSystem.Instance.AddPlayer(PlayerFactory.CreatePlayer("测试_3"));
                     break;
                 default:
                     break;
