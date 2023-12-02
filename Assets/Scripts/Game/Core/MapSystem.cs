@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -15,6 +16,15 @@ namespace Assets.Scripts.Game.Core
         void Awake()
         {
             GenerateGrid();
+            GameEntry.EventManager.Subscribe(EventType.TurnSystem_AddPlayer, TurnSystem_AddPlayer);
+        }
+
+        private void TurnSystem_AddPlayer(object sender, EventArgs args)
+        {
+            int x = UnityEngine.Random.Range(0, width);
+            int y = UnityEngine.Random.Range(0, height);
+            Vector3Int cellPosition = new(x, y, 0);
+            playersContainer.SetTile(cellPosition, playerTile);
         }
 
         void GenerateGrid()

@@ -1,11 +1,9 @@
-using Assets.Scripts.Common.Manager;
+using Assets.Scripts.Common.UI;
 using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
-namespace Assets.Scripts.Common.UI
+namespace Assets.Scripts.Common.Manager
 {
     public class UIManager : ManagerBase
     {

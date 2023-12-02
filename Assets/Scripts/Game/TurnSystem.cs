@@ -1,4 +1,6 @@
+using Assets.Scripts.Common.Manager;
 using Assets.Scripts.Common.Utils;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -44,6 +46,7 @@ namespace Assets.Scripts.Game
         {
             // Add a player to the list
             playerList.AddLast(player);
+            GameEntry.EventManager.InvokeEvent(EventType.TurnSystem_AddPlayer, player, EventArgs.Empty);
         }
 
         public void RemovePlayer(Player player)
