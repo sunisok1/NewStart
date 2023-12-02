@@ -1,0 +1,60 @@
+using Cinemachine;
+using UnityEngine;
+
+namespace UI
+{
+    public class CameraController : MonoBehaviour
+    {
+        [SerializeField] private float speed;
+        [SerializeField] private CinemachineVirtualCamera cinemachine;
+
+        [SerializeField] private float OrthographicSize = 5;
+
+        private Vector2 mousePos;
+
+        public bool Enable { get; set; }
+
+        public void Init()
+        {
+            Enable = true;
+            transform.position = Vector3.zero;
+        }
+
+        private void Update()
+        {
+            if (!Enable) return;
+            Move();
+            Zoom();
+        }
+
+        private void Move()
+        {
+            Vector3 moveVector = Vector3.zero;
+            if (Input.GetMouseButtonDown(2))
+            {
+                mousePos = Input.mousePosition;
+            }
+            if (Input.GetMouseButton(2))
+            {
+                Vector2 curMousePos = Input.mousePosition;
+                Vector2 move = Camera.main.ScreenToWorldPoint(mousePos) - Camera.main.ScreenToWorldPoint(curMousePos);
+                moveVector.x = move.x;
+                moveVector.y = move.y;
+                mousePos = curMousePos;
+            }
+            else
+            {
+                moveVector.x = Input.GetAxis("Horizontal");
+                moveVector.y = Input.GetAxis("Vertical");
+                moveVector *= speed * Time.deltaTime;
+            }
+            transform.position += moveVector;
+        }
+
+        private void Zoom()
+        {
+            OrthographicSize -= Input.GetAxis("Mouse ScrollWheel");
+            cinemachine.m_Lens.OrthographicSize = Mathf.Lerp(cinemachine.m_Lens.OrthographicSize, OrthographicSize, 0.2f);
+        }
+    }
+}
