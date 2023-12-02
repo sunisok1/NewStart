@@ -7,17 +7,12 @@ namespace Assets.Scripts.Common.Manager
 {
     public class GameEntry : MonoSingleton<GameEntry>
     {
-        private readonly Dictionary<Type, ManagerBase> Managers = new();
-
-        virtual protected void Awake()
-        {
-            GetManager<UIManager>().OpenUI<BeginUI>();
-        }
+        private static readonly Dictionary<Type, ManagerBase> Managers = new();
 
         /// <summary>
         /// 获取一个管理器
         /// </summary>
-        public TManager GetManager<TManager>() where TManager : ManagerBase
+        public static TManager GetManager<TManager>() where TManager : ManagerBase
         {
             if (Managers.TryGetValue(typeof(TManager), out ManagerBase manager))
             {
@@ -29,7 +24,7 @@ namespace Assets.Scripts.Common.Manager
         /// <summary>
         /// 创建一个管理器
         /// </summary>
-        private TManager CreateManager<TManager>() where TManager : ManagerBase
+        private static TManager CreateManager<TManager>() where TManager : ManagerBase
         {
             TManager manager = Activator.CreateInstance<TManager>() ?? throw new Exception("创建管理器失败...");
             Managers.Add(typeof(TManager), manager);

@@ -5,6 +5,7 @@ namespace Assets.Scripts.Common.Manager
     /// </summary>
     public abstract class ManagerBase
     {
+        protected ManagerBase() { }
         /// 初始化模块
         public virtual void Init() { }
 

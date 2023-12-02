@@ -2,7 +2,7 @@ using Assets.Scripts.Common.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BeginUI : UIBase
+public class MenuUI : UIBase
 {
     [SerializeField] Button StartGameButton;
 
