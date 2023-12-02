@@ -22,7 +22,7 @@ namespace Assets.Scripts.Game.Core
             {
                 for (int y = 0; y < height; y++)
                 {
-                    Vector3Int cellPosition = new Vector3Int(x, y, 0);
+                    Vector3Int cellPosition = new(x, y, 0);
                     tilemap.SetTile(cellPosition, tileBase);
                 }
             }

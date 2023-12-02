@@ -10,10 +10,12 @@ namespace Assets.Scripts.Common.Manager
         {
             UIManager = GetManager<UIManager>();
             GameManager = GetManager<GameManager>();
+            EventManager = GetManager<EventManager>();
             UIManager.OpenUI<MenuUI>();
         }
 
         public static UIManager UIManager;
         public static GameManager GameManager;
+        public static EventManager EventManager;
     }
 }
