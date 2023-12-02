@@ -3,32 +3,34 @@ using Assets.Scripts.Common.UI;
 using Assets.Scripts.Common.Utils;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static GameManager;
 
-public class GameManager : MonoSingleton<GameManager>
+namespace Assets.Scripts.Game
 {
-    public enum GameState
+    public class GameManager : MonoSingleton<GameManager>
     {
-        Menu,
-        InGame
-        // Add more states as needed
-    }
+        public enum GameState
+        {
+            Menu,
+            InGame
+            // Add more states as needed
+        }
 
-    private void Start()
-    {
-        GameEntry.GetManager<UIManager>().OpenUI<MenuUI>();
-    }
+        private void Start()
+        {
+            GameEntry.GetManager<UIManager>().OpenUI<MenuUI>();
+        }
 
-    public GameState CurrentGameState { get; private set; }
+        public GameState CurrentGameState { get; private set; }
 
-    // Call this method to change the game state and load the associated scene
-    public void ChangeGameState(GameState newState)
-    {
-        CurrentGameState = newState;
+        // Call this method to change the game state and load the associated scene
+        public void ChangeGameState(GameState newState)
+        {
+            CurrentGameState = newState;
 
-        // Load the scene based on the game state
-        SceneManager.LoadScene(newState.ToString());
+            // Load the scene based on the game state
+            SceneManager.LoadScene(newState.ToString());
 
-        // You can perform additional actions or setup based on the game state here
+            // You can perform additional actions or setup based on the game state here
+        }
     }
 }
