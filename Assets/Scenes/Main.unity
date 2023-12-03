@@ -166,8 +166,6 @@ Transform:
   m_Children:
   - {fileID: 1932422101}
   - {fileID: 1419708702}
-  - {fileID: 519420032}
-  - {fileID: 172677852}
   - {fileID: 700135555}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -202,8 +200,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1840155203}
-  m_Father: {fileID: 140572290}
-  m_RootOrder: 3
+  m_Father: {fileID: 700135555}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &172677853
 MonoBehaviour:
@@ -227,7 +225,7 @@ MonoBehaviour:
   m_Follow: {fileID: 700135555}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 8.199996
+    OrthographicSize: 6.199999
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -297,7 +295,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.199996
+  orthographic size: 6.199999
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -325,8 +323,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 140572290}
-  m_RootOrder: 2
+  m_Father: {fileID: 700135555}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
 MonoBehaviour:
@@ -390,9 +388,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 172677852}
+  - {fileID: 519420032}
   m_Father: {fileID: 140572290}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &700135556
 MonoBehaviour:
@@ -630,7 +630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BindingMode: 5
+  m_BindingMode: 3
   m_FollowOffset: {x: 0, y: 0, z: -10}
   m_XDamping: 0
   m_YDamping: 0
