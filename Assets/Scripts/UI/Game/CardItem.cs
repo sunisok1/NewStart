@@ -20,8 +20,11 @@ public class CardItem : MonoBehaviour
     internal void SetCardInfo(Card card)
     {
         Color color = GetColor(card.Suit);
-        // Update card image
-        cardImage.sprite = Entry.ResMgr.Load<Sprite>(ViewConst.image_card + card.ResName);
+        if (!string.IsNullOrEmpty(card.ResName))
+        {
+            // Update card image
+            cardImage.sprite = Entry.ResMgr.Load<Sprite>(ViewConst.image_card + card.ResName);
+        }
         // Update rank text
         rankText.text = GetRankText(card.Rank);
         rankText.color = color;
@@ -46,7 +49,7 @@ public class CardItem : MonoBehaviour
             11 => "J",
             12 => "Q",
             13 => "K",
-            _ => throw new ArgumentOutOfRangeException(),
+            _ => "",
         };
     }
 
@@ -59,7 +62,7 @@ public class CardItem : MonoBehaviour
             Suit.Heart => "♥",
             Suit.Club => "♣",
             Suit.Spade => "♠",
-            _ => throw new ArgumentOutOfRangeException(),
+            _ => "",
         };
     }
 }

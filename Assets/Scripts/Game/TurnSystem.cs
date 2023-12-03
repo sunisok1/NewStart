@@ -11,7 +11,7 @@ namespace Assets.Scripts.Game
     {
         private readonly LinkedList<Player> playerList = new();
         private LinkedListNode<Player> currentPlayerNode;
-        private CardPile cardPile;
+        public CardPile cardPile;
 
         // Property to get the current player
         public Player CurrentPlayer => CurrentPlayerNode.Value;

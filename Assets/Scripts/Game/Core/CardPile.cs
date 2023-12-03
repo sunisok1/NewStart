@@ -14,41 +14,26 @@ namespace Assets.Scripts.Game.Core
             this.cards.AddRange(cards);
         }
 
-        public Card DrawCard()
-        {
-            if (cards.Count == 0)
-            {
-                if (discardPile.Count == 0)
-                {
-                    Debug.Log("No cards left in both the pile and discard pile.");
-                    return null;
-                }
+        public int RemainingCardsCount => cards.Count;
 
-                ShuffleDiscardPileIntoDeck();
-            }
-
-            Card drawnCard = cards[0];
-            cards.RemoveAt(0);
-
-            return drawnCard;
-        }
-
-        public List<Card> DrawCards(int numCards)
+        public List<Card> DrawCards(int num)
         {
             List<Card> drawnCards = new();
 
-            for (int i = 0; i < numCards; i++)
+            while (num > 0)
             {
-                Card drawnCard = DrawCard();
-                if (drawnCard != null)
+                if (cards.Count == 0)
                 {
-                    drawnCards.Add(drawnCard);
+                    // 牌堆没有剩余牌，将弃牌堆洗入牌堆
+                    ShuffleDiscardPileIntoDeck();
                 }
-                else
-                {
-                    Debug.Log($"Attempted to draw {numCards} cards, but only {i} cards were available.");
-                    break;
-                }
+
+                // 从牌堆抽取一张牌
+                Card drawnCard = cards[0];
+                cards.RemoveAt(0);
+                drawnCards.Add(drawnCard);
+
+                num--;
             }
 
             return drawnCards;
@@ -59,16 +44,17 @@ namespace Assets.Scripts.Game.Core
             for (int i = cards.Count - 1; i > 0; i--)
             {
                 int j = random.Next(0, i + 1);
-                // Swap cards[i] and cards[j]
                 (cards[j], cards[i]) = (cards[i], cards[j]);
             }
         }
 
-        public int RemainingCardsCount => cards.Count;
-
         private void ShuffleDiscardPileIntoDeck()
         {
             Debug.Log("Shuffling discard pile into the deck.");
+            if (discardPile.Count == 0)
+            {
+                throw new System.Exception("both cardpile and discardpile are empty");
+            }
             cards.AddRange(discardPile);
             discardPile.Clear();
             Shuffle();

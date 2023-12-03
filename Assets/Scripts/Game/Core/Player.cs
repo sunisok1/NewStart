@@ -32,7 +32,7 @@ namespace Assets.Scripts.Game.Core
 
     public class PlayerCardDeck
     {
-        private readonly List<Card> HandCards = new() { new(), new() };
+        private readonly List<Card> HandCards = new();
         private readonly List<Card> EquipmentCards = new(5);
         private readonly List<Card> JudgmentCards = new();
         public List<Card> GetCard(char area)
@@ -45,11 +45,27 @@ namespace Assets.Scripts.Game.Core
                 _ => throw new ArgumentException("Invalid area character. Use 'e' for Equipment, 'h' for Hand, or 'j' for Judgment."),
             };
         }
+
+        public void AddHandCards(List<Card> cards)
+        {
+            HandCards.AddRange(cards);
+        }
     }
 
     public class Player
     {
         public PlayerData data;
         public readonly PlayerCardDeck deck = new();
+
+        public void Draw(int num)
+        {
+            List<Card> cards = Entry.TurnSystem.cardPile.DrawCards(num);
+            deck.AddHandCards(cards);
+            Player_DrawCardsArgs args = new()
+            {
+                Cards = cards
+            };
+            Entry.EventMgr.InvokeEvent(EventType.Player_DrawCards, this, args);
+        }
     }
 }

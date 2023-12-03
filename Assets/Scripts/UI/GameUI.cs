@@ -28,7 +28,6 @@ namespace Assets.Scripts.UI
                 CardItem cardUI = Instantiate(cardPrefab, cardContent);
                 // Set the card information on the UI
                 cardUI.SetCardInfo(card);
-
             }
         }
     }
