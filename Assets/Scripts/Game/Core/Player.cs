@@ -1,65 +1,55 @@
+using Assets.Scripts.Game.Core;
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
-public enum SexType
+namespace Assets.Scripts.Game.Core
 {
-    Male,
-    Female,
-    Other
-}
-
-public enum CountryType
-{
-    Qun,
-    Wei,
-    Shu,
-    Wu
-}
-
-public struct PlayerData
-{
-    public string Name;
-    public SexType Sex;
-    public CountryType Country;
-    public int MaxHp;
-    public int Hp;
-    public bool IsLinked;
-}
-
-//public struct PlayerData
-//{
-//    public ObservableValue<SexType> Sex;
-//    public ObservableValue<CountryType> Country;
-//    public ObservableValue<int> MaxHp;
-//    public ObservableValue<int> Hp;
-//    public ObservableValue<bool> IsLinked;
-
-//    // Constructor to initialize ObservableValue fields
-//    public PlayerData(SexType sex, CountryType country, int maxHp, int hp, bool isLinked)
-//    {
-//        Sex = new ObservableValue<SexType> { Value = sex };
-//        Country = new ObservableValue<CountryType> { Value = country };
-//        MaxHp = new ObservableValue<int> { Value = maxHp };
-//        Hp = new ObservableValue<int> { Value = hp };
-//        IsLinked = new ObservableValue<bool> { Value = isLinked };
-//    }
-//}
-
-public class Player
-{
-    public PlayerData data;
-}
-
-public class PlayerFactory
-{
-    public static Player CreatePlayer(string name)
+    public enum SexType
     {
-        // 在这里可以添加逻辑来自定义创建Player的过程
-        return new Player()
+        Male,
+        Female,
+        Other
+    }
+
+    public enum CountryType
+    {
+        Qun,
+        Wei,
+        Shu,
+        Wu
+    }
+
+    public struct PlayerData
+    {
+        public string Name;
+        public SexType Sex;
+        public CountryType Country;
+        public int MaxHp;
+        public int Hp;
+        public bool IsLinked;
+    }
+
+    public class PlayerCardDeck
+    {
+        private readonly List<Card> HandCards = new() { new(), new() };
+        private readonly List<Card> EquipmentCards = new(5);
+        private readonly List<Card> JudgmentCards = new();
+        public List<Card> GetCard(char area)
         {
-            data = new()
+            return char.ToLower(area) switch
             {
-                Name = name
-            }
-        };
+                'e' => EquipmentCards,
+                'h' => HandCards,
+                'j' => JudgmentCards,
+                _ => throw new ArgumentException("Invalid area character. Use 'e' for Equipment, 'h' for Hand, or 'j' for Judgment."),
+            };
+        }
+    }
+
+    public class Player
+    {
+        public PlayerData data;
+        public readonly PlayerCardDeck deck = new();
     }
 }

@@ -3,966 +3,1127 @@
     "Id": 1,
     "Name": "杀",
     "Suit": 1,
-    "Rank": 6
+    "Rank": 6,
+    "ResName": "sha"
   },
   {
     "Id": 2,
     "Name": "杀",
     "Suit": 1,
-    "Rank": 7
+    "Rank": 7,
+    "ResName": ""
   },
   {
     "Id": 3,
     "Name": "杀",
     "Suit": 1,
-    "Rank": 8
+    "Rank": 8,
+    "ResName": ""
   },
   {
     "Id": 4,
     "Name": "杀",
     "Suit": 1,
-    "Rank": 9
+    "Rank": 9,
+    "ResName": ""
   },
   {
     "Id": 5,
     "Name": "杀",
     "Suit": 1,
-    "Rank": 10
+    "Rank": 10,
+    "ResName": ""
   },
   {
     "Id": 6,
     "Name": "杀",
     "Suit": 1,
-    "Rank": 13
+    "Rank": 13,
+    "ResName": ""
   },
   {
     "Id": 7,
     "Name": "杀",
     "Suit": 3,
-    "Rank": 2
+    "Rank": 2,
+    "ResName": ""
   },
   {
     "Id": 8,
     "Name": "杀",
     "Suit": 3,
-    "Rank": 3
+    "Rank": 3,
+    "ResName": ""
   },
   {
     "Id": 9,
     "Name": "杀",
     "Suit": 3,
-    "Rank": 4
+    "Rank": 4,
+    "ResName": ""
   },
   {
     "Id": 10,
     "Name": "杀",
     "Suit": 3,
-    "Rank": 5
+    "Rank": 5,
+    "ResName": ""
   },
   {
     "Id": 11,
     "Name": "杀",
     "Suit": 3,
-    "Rank": 6
+    "Rank": 6,
+    "ResName": ""
   },
   {
     "Id": 12,
     "Name": "杀",
     "Suit": 3,
-    "Rank": 7
+    "Rank": 7,
+    "ResName": ""
   },
   {
     "Id": 13,
     "Name": "杀",
     "Suit": 3,
-    "Rank": 8
+    "Rank": 8,
+    "ResName": ""
   },
   {
     "Id": 14,
     "Name": "杀",
     "Suit": 3,
-    "Rank": 8
+    "Rank": 8,
+    "ResName": ""
   },
   {
     "Id": 15,
     "Name": "杀",
     "Suit": 3,
-    "Rank": 9
+    "Rank": 9,
+    "ResName": ""
   },
   {
     "Id": 16,
     "Name": "杀",
     "Suit": 3,
-    "Rank": 9
+    "Rank": 9,
+    "ResName": ""
   },
   {
     "Id": 17,
     "Name": "杀",
     "Suit": 3,
-    "Rank": 10
+    "Rank": 10,
+    "ResName": ""
   },
   {
     "Id": 18,
     "Name": "杀",
     "Suit": 3,
-    "Rank": 10
+    "Rank": 10,
+    "ResName": ""
   },
   {
     "Id": 19,
     "Name": "杀",
     "Suit": 3,
-    "Rank": 11
+    "Rank": 11,
+    "ResName": ""
   },
   {
     "Id": 20,
     "Name": "杀",
     "Suit": 3,
-    "Rank": 11
+    "Rank": 11,
+    "ResName": ""
   },
   {
     "Id": 21,
     "Name": "杀",
     "Suit": 2,
-    "Rank": 10
+    "Rank": 10,
+    "ResName": ""
   },
   {
     "Id": 22,
     "Name": "杀",
     "Suit": 2,
-    "Rank": 10
+    "Rank": 10,
+    "ResName": ""
   },
   {
     "Id": 23,
     "Name": "杀",
     "Suit": 2,
-    "Rank": 11
+    "Rank": 11,
+    "ResName": ""
   },
   {
     "Id": 24,
     "Name": "杀",
     "Suit": 4,
-    "Rank": 7
+    "Rank": 7,
+    "ResName": ""
   },
   {
     "Id": 25,
     "Name": "杀",
     "Suit": 4,
-    "Rank": 8
+    "Rank": 8,
+    "ResName": ""
   },
   {
     "Id": 26,
     "Name": "杀",
     "Suit": 4,
-    "Rank": 8
+    "Rank": 8,
+    "ResName": ""
   },
   {
     "Id": 27,
     "Name": "杀",
     "Suit": 4,
-    "Rank": 9
+    "Rank": 9,
+    "ResName": ""
   },
   {
     "Id": 28,
     "Name": "杀",
     "Suit": 4,
-    "Rank": 9
+    "Rank": 9,
+    "ResName": ""
   },
   {
     "Id": 29,
     "Name": "杀",
     "Suit": 4,
-    "Rank": 10
+    "Rank": 10,
+    "ResName": ""
   },
   {
     "Id": 30,
     "Name": "杀",
     "Suit": 4,
-    "Rank": 10
+    "Rank": 10,
+    "ResName": ""
   },
   {
     "Id": 31,
     "Name": "雷杀",
     "Suit": 3,
-    "Rank": 5
+    "Rank": 5,
+    "ResName": ""
   },
   {
     "Id": 32,
     "Name": "雷杀",
     "Suit": 3,
-    "Rank": 6
+    "Rank": 6,
+    "ResName": ""
   },
   {
     "Id": 33,
     "Name": "雷杀",
     "Suit": 3,
-    "Rank": 7
+    "Rank": 7,
+    "ResName": ""
   },
   {
     "Id": 34,
     "Name": "雷杀",
     "Suit": 3,
-    "Rank": 8
+    "Rank": 8,
+    "ResName": ""
   },
   {
     "Id": 35,
     "Name": "雷杀",
     "Suit": 4,
-    "Rank": 4
+    "Rank": 4,
+    "ResName": ""
   },
   {
     "Id": 36,
     "Name": "雷杀",
     "Suit": 4,
-    "Rank": 5
+    "Rank": 5,
+    "ResName": ""
   },
   {
     "Id": 37,
     "Name": "雷杀",
     "Suit": 4,
-    "Rank": 6
+    "Rank": 6,
+    "ResName": ""
   },
   {
     "Id": 38,
     "Name": "雷杀",
     "Suit": 4,
-    "Rank": 7
+    "Rank": 7,
+    "ResName": ""
   },
   {
     "Id": 39,
     "Name": "雷杀",
     "Suit": 4,
-    "Rank": 8
+    "Rank": 8,
+    "ResName": ""
   },
   {
     "Id": 40,
     "Name": "火杀",
     "Suit": 1,
-    "Rank": 4
+    "Rank": 4,
+    "ResName": ""
   },
   {
     "Id": 41,
     "Name": "火杀",
     "Suit": 1,
-    "Rank": 5
+    "Rank": 5,
+    "ResName": ""
   },
   {
     "Id": 42,
     "Name": "火杀",
     "Suit": 2,
-    "Rank": 4
+    "Rank": 4,
+    "ResName": ""
   },
   {
     "Id": 43,
     "Name": "火杀",
     "Suit": 2,
-    "Rank": 7
+    "Rank": 7,
+    "ResName": ""
   },
   {
     "Id": 44,
     "Name": "火杀",
     "Suit": 2,
-    "Rank": 10
+    "Rank": 10,
+    "ResName": ""
   },
   {
     "Id": 45,
     "Name": "闪",
     "Suit": 1,
-    "Rank": 2
+    "Rank": 2,
+    "ResName": "shan"
   },
   {
     "Id": 46,
     "Name": "闪",
     "Suit": 1,
-    "Rank": 2
+    "Rank": 2,
+    "ResName": ""
   },
   {
     "Id": 47,
     "Name": "闪",
     "Suit": 1,
-    "Rank": 3
+    "Rank": 3,
+    "ResName": ""
   },
   {
     "Id": 48,
     "Name": "闪",
     "Suit": 1,
-    "Rank": 4
+    "Rank": 4,
+    "ResName": ""
   },
   {
     "Id": 49,
     "Name": "闪",
     "Suit": 1,
-    "Rank": 5
+    "Rank": 5,
+    "ResName": ""
   },
   {
     "Id": 50,
     "Name": "闪",
     "Suit": 1,
-    "Rank": 6
+    "Rank": 6,
+    "ResName": ""
   },
   {
     "Id": 51,
     "Name": "闪",
     "Suit": 1,
-    "Rank": 6
+    "Rank": 6,
+    "ResName": ""
   },
   {
     "Id": 52,
     "Name": "闪",
     "Suit": 1,
-    "Rank": 7
+    "Rank": 7,
+    "ResName": ""
   },
   {
     "Id": 53,
     "Name": "闪",
     "Suit": 1,
-    "Rank": 7
+    "Rank": 7,
+    "ResName": ""
   },
   {
     "Id": 54,
     "Name": "闪",
     "Suit": 1,
-    "Rank": 8
+    "Rank": 8,
+    "ResName": ""
   },
   {
     "Id": 55,
     "Name": "闪",
     "Suit": 1,
-    "Rank": 8
+    "Rank": 8,
+    "ResName": ""
   },
   {
     "Id": 56,
     "Name": "闪",
     "Suit": 1,
-    "Rank": 9
+    "Rank": 9,
+    "ResName": ""
   },
   {
     "Id": 57,
     "Name": "闪",
     "Suit": 1,
-    "Rank": 10
+    "Rank": 10,
+    "ResName": ""
   },
   {
     "Id": 58,
     "Name": "闪",
     "Suit": 1,
-    "Rank": 10
+    "Rank": 10,
+    "ResName": ""
   },
   {
     "Id": 59,
     "Name": "闪",
     "Suit": 1,
-    "Rank": 11
+    "Rank": 11,
+    "ResName": ""
   },
   {
     "Id": 60,
     "Name": "闪",
     "Suit": 1,
-    "Rank": 11
+    "Rank": 11,
+    "ResName": ""
   },
   {
     "Id": 61,
     "Name": "闪",
     "Suit": 1,
-    "Rank": 11
+    "Rank": 11,
+    "ResName": ""
   },
   {
     "Id": 62,
     "Name": "闪",
     "Suit": 2,
-    "Rank": 2
+    "Rank": 2,
+    "ResName": ""
   },
   {
     "Id": 63,
     "Name": "闪",
     "Suit": 2,
-    "Rank": 2
+    "Rank": 2,
+    "ResName": ""
   },
   {
     "Id": 64,
     "Name": "闪",
     "Suit": 2,
-    "Rank": 8
+    "Rank": 8,
+    "ResName": ""
   },
   {
     "Id": 65,
     "Name": "闪",
     "Suit": 2,
-    "Rank": 9
+    "Rank": 9,
+    "ResName": ""
   },
   {
     "Id": 66,
     "Name": "闪",
     "Suit": 2,
-    "Rank": 11
+    "Rank": 11,
+    "ResName": ""
   },
   {
     "Id": 67,
     "Name": "闪",
     "Suit": 2,
-    "Rank": 12
+    "Rank": 12,
+    "ResName": ""
   },
   {
     "Id": 68,
     "Name": "闪",
     "Suit": 2,
-    "Rank": 13
+    "Rank": 13,
+    "ResName": ""
   },
   {
     "Id": 69,
     "Name": "桃",
     "Suit": 1,
-    "Rank": 2
+    "Rank": 2,
+    "ResName": "tao"
   },
   {
     "Id": 70,
     "Name": "桃",
     "Suit": 1,
-    "Rank": 3
+    "Rank": 3,
+    "ResName": ""
   },
   {
     "Id": 71,
     "Name": "桃",
     "Suit": 1,
-    "Rank": 12
+    "Rank": 12,
+    "ResName": ""
   },
   {
     "Id": 72,
     "Name": "桃",
     "Suit": 2,
-    "Rank": 3
+    "Rank": 3,
+    "ResName": ""
   },
   {
     "Id": 73,
     "Name": "桃",
     "Suit": 2,
-    "Rank": 4
+    "Rank": 4,
+    "ResName": ""
   },
   {
     "Id": 74,
     "Name": "桃",
     "Suit": 2,
-    "Rank": 5
+    "Rank": 5,
+    "ResName": ""
   },
   {
     "Id": 75,
     "Name": "桃",
     "Suit": 2,
-    "Rank": 6
+    "Rank": 6,
+    "ResName": ""
   },
   {
     "Id": 76,
     "Name": "桃",
     "Suit": 2,
-    "Rank": 6
+    "Rank": 6,
+    "ResName": ""
   },
   {
     "Id": 77,
     "Name": "桃",
     "Suit": 2,
-    "Rank": 7
+    "Rank": 7,
+    "ResName": ""
   },
   {
     "Id": 78,
     "Name": "桃",
     "Suit": 2,
-    "Rank": 8
+    "Rank": 8,
+    "ResName": ""
   },
   {
     "Id": 79,
     "Name": "桃",
     "Suit": 2,
-    "Rank": 9
+    "Rank": 9,
+    "ResName": ""
   },
   {
     "Id": 80,
     "Name": "桃",
     "Suit": 2,
-    "Rank": 12
+    "Rank": 12,
+    "ResName": ""
   },
   {
     "Id": 81,
     "Name": "酒",
     "Suit": 1,
-    "Rank": 9
+    "Rank": 9,
+    "ResName": "jiu"
   },
   {
     "Id": 82,
     "Name": "酒",
     "Suit": 3,
-    "Rank": 3
+    "Rank": 3,
+    "ResName": ""
   },
   {
     "Id": 83,
     "Name": "酒",
     "Suit": 3,
-    "Rank": 9
+    "Rank": 9,
+    "ResName": ""
   },
   {
     "Id": 84,
     "Name": "酒",
     "Suit": 4,
-    "Rank": 3
+    "Rank": 3,
+    "ResName": ""
   },
   {
     "Id": 85,
     "Name": "酒",
     "Suit": 4,
-    "Rank": 9
+    "Rank": 9,
+    "ResName": ""
   },
   {
     "Id": 86,
     "Name": "桃园结义",
     "Suit": 2,
-    "Rank": 1
+    "Rank": 1,
+    "ResName": ""
   },
   {
     "Id": 87,
     "Name": "万箭齐发",
     "Suit": 2,
-    "Rank": 1
+    "Rank": 1,
+    "ResName": ""
   },
   {
     "Id": 88,
     "Name": "借刀杀人",
     "Suit": 3,
-    "Rank": 12
+    "Rank": 12,
+    "ResName": ""
   },
   {
     "Id": 89,
     "Name": "借刀杀人",
     "Suit": 3,
-    "Rank": 13
+    "Rank": 13,
+    "ResName": ""
   },
   {
     "Id": 90,
     "Name": "五谷丰登",
     "Suit": 2,
-    "Rank": 3
+    "Rank": 3,
+    "ResName": ""
   },
   {
     "Id": 91,
     "Name": "五谷丰登",
     "Suit": 2,
-    "Rank": 4
+    "Rank": 4,
+    "ResName": ""
   },
   {
     "Id": 92,
     "Name": "南蛮入侵",
     "Suit": 3,
-    "Rank": 7
+    "Rank": 7,
+    "ResName": ""
   },
   {
     "Id": 93,
     "Name": "南蛮入侵",
     "Suit": 4,
-    "Rank": 7
+    "Rank": 7,
+    "ResName": ""
   },
   {
     "Id": 94,
     "Name": "南蛮入侵",
     "Suit": 2,
-    "Rank": 13
+    "Rank": 13,
+    "ResName": ""
   },
   {
     "Id": 95,
     "Name": "决斗",
     "Suit": 1,
-    "Rank": 1
+    "Rank": 1,
+    "ResName": ""
   },
   {
     "Id": 96,
     "Name": "决斗",
     "Suit": 3,
-    "Rank": 1
+    "Rank": 1,
+    "ResName": ""
   },
   {
     "Id": 97,
     "Name": "决斗",
     "Suit": 4,
-    "Rank": 1
+    "Rank": 1,
+    "ResName": ""
   },
   {
     "Id": 98,
     "Name": "火攻",
     "Suit": 1,
-    "Rank": 12
+    "Rank": 12,
+    "ResName": ""
   },
   {
     "Id": 99,
     "Name": "火攻",
     "Suit": 2,
-    "Rank": 2
+    "Rank": 2,
+    "ResName": ""
   },
   {
     "Id": 100,
     "Name": "火攻",
     "Suit": 2,
-    "Rank": 3
+    "Rank": 3,
+    "ResName": ""
   },
   {
     "Id": 101,
     "Name": "无中生有",
     "Suit": 2,
-    "Rank": 7
+    "Rank": 7,
+    "ResName": ""
   },
   {
     "Id": 102,
     "Name": "无中生有",
     "Suit": 2,
-    "Rank": 8
+    "Rank": 8,
+    "ResName": ""
   },
   {
     "Id": 103,
     "Name": "无中生有",
     "Suit": 2,
-    "Rank": 9
+    "Rank": 9,
+    "ResName": ""
   },
   {
     "Id": 104,
     "Name": "无中生有",
     "Suit": 2,
-    "Rank": 11
+    "Rank": 11,
+    "ResName": ""
   },
   {
     "Id": 105,
     "Name": "顺手牵羊",
     "Suit": 1,
-    "Rank": 3
+    "Rank": 3,
+    "ResName": ""
   },
   {
     "Id": 106,
     "Name": "顺手牵羊",
     "Suit": 1,
-    "Rank": 4
+    "Rank": 4,
+    "ResName": ""
   },
   {
     "Id": 107,
     "Name": "顺手牵羊",
     "Suit": 4,
-    "Rank": 3
+    "Rank": 3,
+    "ResName": ""
   },
   {
     "Id": 108,
     "Name": "顺手牵羊",
     "Suit": 4,
-    "Rank": 4
+    "Rank": 4,
+    "ResName": ""
   },
   {
     "Id": 109,
     "Name": "顺手牵羊",
     "Suit": 4,
-    "Rank": 11
+    "Rank": 11,
+    "ResName": ""
   },
   {
     "Id": 110,
     "Name": "过河拆桥",
     "Suit": 2,
-    "Rank": 12
+    "Rank": 12,
+    "ResName": ""
   },
   {
     "Id": 111,
     "Name": "过河拆桥",
     "Suit": 3,
-    "Rank": 3
+    "Rank": 3,
+    "ResName": ""
   },
   {
     "Id": 112,
     "Name": "过河拆桥",
     "Suit": 3,
-    "Rank": 4
+    "Rank": 4,
+    "ResName": ""
   },
   {
     "Id": 113,
     "Name": "过河拆桥",
     "Suit": 4,
-    "Rank": 3
+    "Rank": 3,
+    "ResName": ""
   },
   {
     "Id": 114,
     "Name": "过河拆桥",
     "Suit": 4,
-    "Rank": 4
+    "Rank": 4,
+    "ResName": ""
   },
   {
     "Id": 115,
     "Name": "过河拆桥",
     "Suit": 4,
-    "Rank": 12
+    "Rank": 12,
+    "ResName": ""
   },
   {
     "Id": 116,
     "Name": "铁索连环",
     "Suit": 3,
-    "Rank": 10
+    "Rank": 10,
+    "ResName": ""
   },
   {
     "Id": 117,
     "Name": "铁索连环",
     "Suit": 3,
-    "Rank": 11
+    "Rank": 11,
+    "ResName": ""
   },
   {
     "Id": 118,
     "Name": "铁索连环",
     "Suit": 3,
-    "Rank": 12
+    "Rank": 12,
+    "ResName": ""
   },
   {
     "Id": 119,
     "Name": "铁索连环",
     "Suit": 3,
-    "Rank": 13
+    "Rank": 13,
+    "ResName": ""
   },
   {
     "Id": 120,
     "Name": "铁索连环",
     "Suit": 4,
-    "Rank": 11
+    "Rank": 11,
+    "ResName": ""
   },
   {
     "Id": 121,
     "Name": "铁索连环",
     "Suit": 4,
-    "Rank": 12
+    "Rank": 12,
+    "ResName": ""
   },
   {
     "Id": 122,
     "Name": "无懈可击",
     "Suit": 1,
-    "Rank": 12
+    "Rank": 12,
+    "ResName": ""
   },
   {
     "Id": 123,
     "Name": "无懈可击",
     "Suit": 2,
-    "Rank": 1
+    "Rank": 1,
+    "ResName": ""
   },
   {
     "Id": 124,
     "Name": "无懈可击",
     "Suit": 2,
-    "Rank": 13
+    "Rank": 13,
+    "ResName": ""
   },
   {
     "Id": 125,
     "Name": "无懈可击",
     "Suit": 3,
-    "Rank": 12
+    "Rank": 12,
+    "ResName": ""
   },
   {
     "Id": 126,
     "Name": "无懈可击",
     "Suit": 3,
-    "Rank": 13
+    "Rank": 13,
+    "ResName": ""
   },
   {
     "Id": 127,
     "Name": "无懈可击",
     "Suit": 4,
-    "Rank": 11
+    "Rank": 11,
+    "ResName": ""
   },
   {
     "Id": 128,
     "Name": "无懈可击",
     "Suit": 4,
-    "Rank": 13
+    "Rank": 13,
+    "ResName": ""
   },
   {
     "Id": 129,
     "Name": "闪电",
     "Suit": 2,
-    "Rank": 12
+    "Rank": 12,
+    "ResName": ""
   },
   {
     "Id": 130,
     "Name": "闪电",
     "Suit": 4,
-    "Rank": 1
+    "Rank": 1,
+    "ResName": ""
   },
   {
     "Id": 131,
     "Name": "兵粮寸断",
     "Suit": 3,
-    "Rank": 4
+    "Rank": 4,
+    "ResName": ""
   },
   {
     "Id": 132,
     "Name": "兵粮寸断",
     "Suit": 4,
-    "Rank": 10
+    "Rank": 10,
+    "ResName": ""
   },
   {
     "Id": 133,
     "Name": "乐不思蜀",
     "Suit": 2,
-    "Rank": 6
+    "Rank": 6,
+    "ResName": ""
   },
   {
     "Id": 134,
     "Name": "乐不思蜀",
     "Suit": 3,
-    "Rank": 6
+    "Rank": 6,
+    "ResName": ""
   },
   {
     "Id": 135,
     "Name": "乐不思蜀",
     "Suit": 4,
-    "Rank": 6
+    "Rank": 6,
+    "ResName": ""
   },
   {
     "Id": 136,
     "Name": "诸葛连弩",
     "Suit": 1,
-    "Rank": 1
+    "Rank": 1,
+    "ResName": ""
   },
   {
     "Id": 137,
     "Name": "诸葛连弩",
     "Suit": 3,
-    "Rank": 1
+    "Rank": 1,
+    "ResName": ""
   },
   {
     "Id": 138,
     "Name": "青釭剑",
     "Suit": 4,
-    "Rank": 2
+    "Rank": 2,
+    "ResName": ""
   },
   {
     "Id": 139,
     "Name": "寒冰箭",
     "Suit": 4,
-    "Rank": 2
+    "Rank": 2,
+    "ResName": ""
   },
   {
     "Id": 140,
     "Name": "雌雄双股剑",
     "Suit": 4,
-    "Rank": 2
+    "Rank": 2,
+    "ResName": ""
   },
   {
     "Id": 141,
     "Name": "古锭刀",
     "Suit": 4,
-    "Rank": 1
+    "Rank": 1,
+    "ResName": ""
   },
   {
     "Id": 142,
     "Name": "青龙偃月刀",
     "Suit": 4,
-    "Rank": 5
+    "Rank": 5,
+    "ResName": ""
   },
   {
     "Id": 143,
     "Name": "丈八蛇矛",
     "Suit": 4,
-    "Rank": 12
+    "Rank": 12,
+    "ResName": ""
   },
   {
     "Id": 144,
     "Name": "贯石斧",
     "Suit": 1,
-    "Rank": 5
+    "Rank": 5,
+    "ResName": ""
   },
   {
     "Id": 145,
     "Name": "朱雀羽扇",
     "Suit": 1,
-    "Rank": 1
+    "Rank": 1,
+    "ResName": ""
   },
   {
     "Id": 146,
     "Name": "方天画戟",
     "Suit": 1,
-    "Rank": 12
+    "Rank": 12,
+    "ResName": ""
   },
   {
     "Id": 147,
     "Name": "麒麟弓",
     "Suit": 2,
-    "Rank": 5
+    "Rank": 5,
+    "ResName": ""
   },
   {
     "Id": 148,
     "Name": "白银狮子",
     "Suit": 3,
-    "Rank": 1
+    "Rank": 1,
+    "ResName": ""
   },
   {
     "Id": 149,
     "Name": "仁王盾",
     "Suit": 3,
-    "Rank": 2
+    "Rank": 2,
+    "ResName": ""
   },
   {
     "Id": 150,
     "Name": "藤甲",
     "Suit": 3,
-    "Rank": 2
+    "Rank": 2,
+    "ResName": ""
   },
   {
     "Id": 151,
     "Name": "藤甲",
     "Suit": 4,
-    "Rank": 2
+    "Rank": 2,
+    "ResName": ""
   },
   {
     "Id": 152,
     "Name": "八卦阵",
     "Suit": 3,
-    "Rank": 2
+    "Rank": 2,
+    "ResName": ""
   },
   {
     "Id": 153,
     "Name": "八卦阵",
     "Suit": 4,
-    "Rank": 2
+    "Rank": 2,
+    "ResName": ""
   },
   {
     "Id": 154,
     "Name": "紫骍",
     "Suit": 1,
-    "Rank": 13
+    "Rank": 13,
+    "ResName": ""
   },
   {
     "Id": 155,
     "Name": "赤兔",
     "Suit": 2,
-    "Rank": 5
+    "Rank": 5,
+    "ResName": ""
   },
   {
     "Id": 156,
     "Name": "大宛",
     "Suit": 4,
-    "Rank": 13
+    "Rank": 13,
+    "ResName": ""
   },
   {
     "Id": 157,
     "Name": "骅骝",
     "Suit": 1,
-    "Rank": 13
+    "Rank": 13,
+    "ResName": ""
   },
   {
     "Id": 158,
     "Name": "的卢",
     "Suit": 3,
-    "Rank": 5
+    "Rank": 5,
+    "ResName": ""
   },
   {
     "Id": 159,
     "Name": "爪黄飞电",
     "Suit": 2,
-    "Rank": 13
+    "Rank": 13,
+    "ResName": ""
   },
   {
     "Id": 160,
     "Name": "绝影",
     "Suit": 4,
-    "Rank": 5
+    "Rank": 5,
+    "ResName": ""
   },
   {
     "Id": 161,
     "Name": "木牛流马",
     "Suit": 1,
-    "Rank": 5
+    "Rank": 5,
+    "ResName": ""
   }
 ]

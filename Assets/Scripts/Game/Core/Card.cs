@@ -15,14 +15,9 @@ namespace Assets.Scripts.Game.Core
     {
         public int Id;
         public string Name;
-        public Suit Suit { get; }
-        public int Rank { get; }
-
-        public Card(Suit suit, int rank)
-        {
-            Suit = suit;
-            Rank = rank;
-        }
+        public Suit Suit;
+        public int Rank;
+        public string ResName;
 
         public override string ToString()
         {

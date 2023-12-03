@@ -14,7 +14,26 @@ namespace Assets.Scripts.Game
         private CardPile cardPile;
 
         // Property to get the current player
-        public Player CurrentPlayer => currentPlayerNode.Value;
+        public Player CurrentPlayer => CurrentPlayerNode.Value;
+
+        public LinkedListNode<Player> CurrentPlayerNode
+        {
+            get => currentPlayerNode;
+            set
+            {
+                if (currentPlayerNode != value)
+                {
+                    TurnSystem_CurrentPlayerNodeChangedArgs args = new()
+                    {
+                        Previous = currentPlayerNode?.Value,
+                        Current = value.Value
+                    };
+                    GameEntry.EventManager.InvokeEvent(EventType.TurnSystem_CurrentPlayerNodeChanged, this, args);
+
+                    currentPlayerNode = value;
+                }
+            }
+        }
 
         public void StartGame()
         {
@@ -27,7 +46,7 @@ namespace Assets.Scripts.Game
             // Start the game by setting the current player to the first player in the list
             if (playerList.Count > 0)
             {
-                currentPlayerNode = playerList.First;
+                CurrentPlayerNode = playerList.First;
             }
         }
 
@@ -40,7 +59,7 @@ namespace Assets.Scripts.Game
             }
 
             // Move to the next player in the list
-            currentPlayerNode = currentPlayerNode.Next ?? playerList.First;
+            CurrentPlayerNode = CurrentPlayerNode.Next ?? playerList.First;
 
             // You can perform any actions related to the turn change here
             Debug.Log($"Next turn: {CurrentPlayer.data}");
@@ -59,7 +78,7 @@ namespace Assets.Scripts.Game
             playerList.Remove(player);
 
             // If the removed player was the current player, move to the next player
-            if (playerList.Count > 0 && currentPlayerNode.Value == player)
+            if (playerList.Count > 0 && CurrentPlayerNode.Value == player)
             {
                 MoveNext();
             }
