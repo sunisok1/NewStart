@@ -82,7 +82,7 @@ namespace Assets.Scripts.Common.Manager
         /// </summary>
         private T LoadUI<T>() where T : UIBase
         {
-            T prefab = Resources.Load<T>($"UI/{typeof(T)}") ?? throw new Exception($"加载{typeof(T)}失败");
+            T prefab = Resources.Load<T>($"UI/{typeof(T).Name}") ?? throw new Exception($"加载{typeof(T).Name}失败");
             T ui = UnityEngine.Object.Instantiate(prefab.gameObject).GetComponent<T>();
             uiLoaded.Add(typeof(T), ui);
             // 根据UI类型，存放到不同的节点中

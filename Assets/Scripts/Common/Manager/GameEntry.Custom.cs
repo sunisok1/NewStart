@@ -1,5 +1,6 @@
 using Assets.Scripts.Common.Manager;
 using Assets.Scripts.Game;
+using Assets.Scripts.UI;
 using UI;
 using UnityEngine;
 

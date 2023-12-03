@@ -2,6 +2,7 @@ using Assets.Scripts.Common.Manager;
 using Assets.Scripts.Common.UI;
 using Assets.Scripts.Common.Utils;
 using Assets.Scripts.Game.Core;
+using Assets.Scripts.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -32,8 +33,9 @@ namespace Assets.Scripts.Game
                     GameEntry.UIManager.OpenUI<MenuUI>();
                     break;
                 case GameState.Game:
+                    GameEntry.UIManager.OpenUI<GameUI>();
                     GameEntry.CameraController.Init();
-                    MapSystem gridSystem = Resources.Load<MapSystem>(ViewConst.Prefabs_Core_Map_MapSystem);
+                    MapSystem gridSystem = Resources.Load<MapSystem>(ViewConst.Core_Map_MapSystem);
                     Object.Instantiate(gridSystem.gameObject);
                     GameEntry.TurnSystem.StartGame();
                     break;
