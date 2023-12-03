@@ -14,39 +14,27 @@ public class CardItem : MonoBehaviour
     // Set card information method
     public void SetCardInfo(Sprite cardSprite, int rank, Suit suit, string cardName)
     {
-        // Update card image
-        if (cardImage != null)
-        {
-            cardImage.sprite = cardSprite;
-        }
 
-        // Update rank text
-        if (rankText != null)
-        {
-            rankText.text = GetRankText(rank);
-            rankText.color = (suit == Suit.Heart || suit == Suit.Diamond) ? Color.red : Color.black;
-        }
-
-        // Update suit text and set color
-        if (suitText != null)
-        {
-            suitText.text = GetSuitText(suit);
-
-            // Set color based on suit
-            suitText.color = (suit == Suit.Heart || suit == Suit.Diamond) ? Color.red : Color.black;
-        }
-
-        // Update name text
-        if (nameText != null)
-        {
-            nameText.text = cardName;
-        }
     }
 
     internal void SetCardInfo(Card card)
     {
-        Sprite cardSprite = Entry.ResMgr.Load<Sprite>(ViewConst.image_card + card.ResName);
-        SetCardInfo(cardSprite, card.Rank, card.Suit, card.Name);
+        Color color = GetColor(card.Suit);
+        // Update card image
+        cardImage.sprite = Entry.ResMgr.Load<Sprite>(ViewConst.image_card + card.ResName);
+        // Update rank text
+        rankText.text = GetRankText(card.Rank);
+        rankText.color = color;
+        // Update suit text and set color
+        suitText.text = GetSuitText(card.Suit);
+        suitText.color = color;
+        // Update name textS
+        nameText.text = card.Name;
+    }
+
+    private static Color GetColor(Suit suit)
+    {
+        return suit == Suit.Heart || suit == Suit.Diamond ? Color.red : Color.black;
     }
 
     private string GetRankText(int rank)
