@@ -140,7 +140,7 @@ public class ExcelUtility
             string json = JsonConvert.SerializeObject(table, Formatting.Indented);
 
             //写入文件
-            using (FileStream fileStream = new FileStream(JsonPath + "/" + outname + ".txt", FileMode.Create, FileAccess.Write))
+            using (FileStream fileStream = new FileStream(JsonPath + "/" + outname + ".json", FileMode.Create, FileAccess.Write))
             {
                 using (TextWriter textWriter = new StreamWriter(fileStream, encoding))
                 {

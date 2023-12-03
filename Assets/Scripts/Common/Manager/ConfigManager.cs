@@ -2,13 +2,14 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
+using Assets.Scripts.Game.Core;
 
 namespace Assets.Scripts.Common.Manager
 {
     public class ConfigManager : ManagerBase
     {
         private readonly Dictionary<string, object> configDictionary = new();
-        private const string configPath = "Assets/Res/Config";
+        private const string configPath = "Config";
 
         public override void Init()
         {
@@ -18,14 +19,15 @@ namespace Assets.Scripts.Common.Manager
 
         private void LoadAllConfigs()
         {
-            LoadConfig<List<Card>>("CardpileConfig");
+            LoadConfig<List<Card>>("Cardpile");
             // Add more configurations as needed
         }
 
         private void LoadConfig<T>(string key)
         {
-            string filePath = $"{configPath}/{key}.json";
-            if (Resources.Load(filePath) is TextAsset textAsset)
+            string filePath = $"{configPath}/{key}";
+            var temp = Resources.Load(filePath);
+            if (temp is TextAsset textAsset)
             {
                 string json = textAsset.text;
                 T result = JsonConvert.DeserializeObject<T>(json);

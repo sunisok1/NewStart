@@ -1,15 +1,17 @@
 using Assets.Scripts.Common.Manager;
 using Assets.Scripts.Common.Utils;
+using Assets.Scripts.Game.Core;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace Assets.Scripts.Game
 {
-    public class TurnSystem : MonoSingleton<TurnSystem>
+    public class TurnSystem : ManagerBase
     {
         private readonly LinkedList<Player> playerList = new();
         private LinkedListNode<Player> currentPlayerNode;
+        private CardPile cardPile;
 
         // Property to get the current player
         public Player CurrentPlayer => currentPlayerNode.Value;
@@ -17,9 +19,11 @@ namespace Assets.Scripts.Game
         public void StartGame()
         {
             // Initialize your player list and set the current player
-            // For example, assuming you have a list of Player objects:
-            // playerList = new LinkedList<Player>(yourListOfPlayers);
-
+            cardPile = new(GameEntry.ConfigManager.GetConfig<List<Card>>("Cardpile"));
+            Debug.Log(cardPile.RemainingCardsCount);
+            AddPlayer(PlayerFactory.CreatePlayer("测试_1"));
+            AddPlayer(PlayerFactory.CreatePlayer("测试_2"));
+            AddPlayer(PlayerFactory.CreatePlayer("测试_3"));
             // Start the game by setting the current player to the first player in the list
             if (playerList.Count > 0)
             {

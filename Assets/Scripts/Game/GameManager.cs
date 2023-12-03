@@ -35,9 +35,7 @@ namespace Assets.Scripts.Game
                     GameEntry.CameraController.Init();
                     MapSystem gridSystem = Resources.Load<MapSystem>(ViewConst.Prefabs_Core_Map_MapSystem);
                     Object.Instantiate(gridSystem.gameObject);
-                    TurnSystem.Instance.AddPlayer(PlayerFactory.CreatePlayer("测试_1"));
-                    TurnSystem.Instance.AddPlayer(PlayerFactory.CreatePlayer("测试_2"));
-                    TurnSystem.Instance.AddPlayer(PlayerFactory.CreatePlayer("测试_3"));
+                    GameEntry.TurnSystem.StartGame();
                     break;
                 default:
                     break;
