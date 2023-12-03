@@ -6,7 +6,10 @@ public enum EventType
 {
     TurnSystem_AddPlayer,
     TurnSystem_CurrentPlayerNodeChanged,
-    Player_DrawCards
+    Player_DrawCards,
+    Input_Confirm,
+    Input_Cancel,
+    Input_EndUse
 }
 
 public class TurnSystem_CurrentPlayerNodeChangedArgs : EventArgs
