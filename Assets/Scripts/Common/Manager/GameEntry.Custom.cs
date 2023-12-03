@@ -10,6 +10,8 @@ public partial class GameEntry
         UIManager = GetManager<UIManager>();
         GameManager = GetManager<GameManager>();
         EventManager = GetManager<EventManager>();
+        ConfigManager = GetManager<ConfigManager>();
+
         UIManager.OpenUI<MenuUI>();
         CameraController = transform.Find("CameraController").GetComponent<CameraController>();
     }
@@ -17,5 +19,7 @@ public partial class GameEntry
     public static UIManager UIManager;
     public static GameManager GameManager;
     public static EventManager EventManager;
+    public static ConfigManager ConfigManager;
+
     public static CameraController CameraController;
 }

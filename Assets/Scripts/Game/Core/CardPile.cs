@@ -1,12 +1,23 @@
 using System;
 using System.Collections.Generic;
 
+public enum Suit
+{
+    None = 0,
+    Diamond = 1,
+    Heart = 2,
+    Club = 3,
+    Spade = 4
+}
+
 public class Card
 {
-    public string Suit { get; }
-    public string Rank { get; }
+    public int Id;
+    public string Name;
+    public Suit Suit { get; }
+    public int Rank { get; }
 
-    public Card(string suit, string rank)
+    public Card(Suit suit, int rank)
     {
         Suit = suit;
         Rank = rank;
@@ -18,14 +29,15 @@ public class Card
     }
 }
 
+
 public class CardPile
 {
-    private List<Card> cards = new List<Card>();
-    private Random random = new Random();
+    private readonly List<Card> cards = new();
+    private readonly Random random = new();
 
-    public void AddCard(Card card)
+    public CardPile(List<Card> cards)
     {
-        cards.Add(card);
+        this.cards = cards;
     }
 
     public Card DrawCard()
