@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using Assets.Scripts.Common.Manager;
 
-public class ResourceManager : ManagerBase
+public class ResMgr : MgrBase
 {
     // 资源缓存
     private readonly Dictionary<string, Object> resourceCache = new();
@@ -11,7 +11,7 @@ public class ResourceManager : ManagerBase
     public const int cacheCapacity = 50;
 
     // 加载资源
-    public T LoadResource<T>(string resourcePath) where T : Object
+    public T Load<T>(string resourcePath) where T : Object
     {
         if (resourceCache.ContainsKey(resourcePath))
         {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Assets.Scripts.Common.Manager
 {
-    public class EventManager : ManagerBase
+    public class EventMgr : MgrBase
     {
         private readonly Dictionary<EventType, EventHandler<EventArgs>> EventHandlers = new();
 

@@ -16,7 +16,7 @@ namespace Assets.Scripts.Game.Core
         void Awake()
         {
             GenerateGrid();
-            GameEntry.EventManager.Subscribe(EventType.TurnSystem_AddPlayer, TurnSystem_AddPlayer);
+            Entry.EventMgr.Subscribe(EventType.TurnSystem_AddPlayer, TurnSystem_AddPlayer);
         }
 
         private void TurnSystem_AddPlayer(object sender, EventArgs args)

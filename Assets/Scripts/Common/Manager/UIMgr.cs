@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.Common.Manager
 {
-    public class UIManager : ManagerBase
+    public class UIMgr : MgrBase
     {
         /// 根节点，即UIRoot 
         private Transform uiRoot;
@@ -34,7 +34,7 @@ namespace Assets.Scripts.Common.Manager
             // 保存各个节点的信息
             if (uiRoot == null)
             {
-                uiRoot = GameEntry.Instance.transform.Find("UIRoot");
+                uiRoot = Entry.Instance.transform.Find("UIRoot");
                 fixedRoot = uiRoot.Find("Fixed");
                 normalRoot = uiRoot.Find("Normal");
                 popUpRoot = uiRoot.Find("PopUp");

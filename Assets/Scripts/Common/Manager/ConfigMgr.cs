@@ -6,7 +6,7 @@ using Assets.Scripts.Game.Core;
 
 namespace Assets.Scripts.Common.Manager
 {
-    public class ConfigManager : ManagerBase
+    public class ConfigMgr : MgrBase
     {
         private readonly Dictionary<string, object> configDictionary = new();
         private const string configPath = "Config";

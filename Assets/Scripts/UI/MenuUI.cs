@@ -19,7 +19,7 @@ namespace Assets.Scripts.UI
         private void OnStartGameButtonClick()
         {
             Debug.Log("Start Game Button Clicked!");
-            GameEntry.GameManager.ChangeGameState(GameManager.GameState.Game);
+            Entry.GameMgr.ChangeGameState(GameMgr.GameState.Game);
         }
     }
 }

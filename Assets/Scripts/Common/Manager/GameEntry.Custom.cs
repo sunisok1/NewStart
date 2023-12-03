@@ -4,27 +4,29 @@ using Assets.Scripts.UI;
 using UI;
 using UnityEngine;
 
-public partial class GameEntry
+public partial class Entry
 {
 
-    public static UIManager UIManager;
-    public static GameManager GameManager;
-    public static EventManager EventManager;
-    public static ConfigManager ConfigManager;
+    public static UIMgr UIMgr;
+    public static GameMgr GameMgr;
+    public static EventMgr EventMgr;
+    public static ConfigMgr ConfigMgr;
+    public static ResMgr ResMgr;
 
     public static CameraController CameraController;
     public static TurnSystem TurnSystem;
 
     private void Start()
     {
-        UIManager = GetManager<UIManager>();
-        GameManager = GetManager<GameManager>();
-        EventManager = GetManager<EventManager>();
-        ConfigManager = GetManager<ConfigManager>();
+        UIMgr = GetManager<UIMgr>();
+        GameMgr = GetManager<GameMgr>();
+        EventMgr = GetManager<EventMgr>();
+        ConfigMgr = GetManager<ConfigMgr>();
+        ResMgr = GetManager<ResMgr>();
 
         CameraController = transform.Find("CameraController").GetComponent<CameraController>();
         TurnSystem = GetManager<TurnSystem>();
 
-        UIManager.OpenUI<MenuUI>();
+        UIMgr.OpenUI<MenuUI>();
     }
 }

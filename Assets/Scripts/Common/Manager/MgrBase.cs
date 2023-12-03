@@ -3,9 +3,9 @@ namespace Assets.Scripts.Common.Manager
     /// <summary>
     /// 模块管理基类
     /// </summary>
-    public abstract class ManagerBase
+    public abstract class MgrBase
     {
-        protected ManagerBase() { }
+        protected MgrBase() { }
         /// 初始化模块
         public virtual void Init() { }
 

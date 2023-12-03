@@ -13,7 +13,7 @@ namespace Assets.Scripts.UI
         [SerializeField] CardItem cardPrefab;
         void Awake()
         {
-            GameEntry.EventManager.Subscribe(EventType.TurnSystem_CurrentPlayerNodeChanged, TurnSystem_CurrentPlayerNodeChanged);
+            Entry.EventMgr.Subscribe(EventType.TurnSystem_CurrentPlayerNodeChanged, TurnSystem_CurrentPlayerNodeChanged);
         }
 
         private void TurnSystem_CurrentPlayerNodeChanged(object sender, EventArgs e)
@@ -27,6 +27,7 @@ namespace Assets.Scripts.UI
                 // Instantiate the card UI prefab
                 CardItem cardUI = Instantiate(cardPrefab, cardContent);
                 // Set the card information on the UI
+                cardUI.SetCardInfo(card);
 
             }
         }

@@ -4,16 +4,16 @@ using Assets.Scripts.Common.Manager;
 using Assets.Scripts.Common.UI;
 using Assets.Scripts.Common.Utils;
 
-public partial class GameEntry : MonoSingleton<GameEntry>
+public partial class Entry : MonoSingleton<Entry>
 {
-    private static readonly Dictionary<Type, ManagerBase> Managers = new();
+    private static readonly Dictionary<Type, MgrBase> Managers = new();
 
     /// <summary>
     /// 获取一个管理器
     /// </summary>
-    public static TManager GetManager<TManager>() where TManager : ManagerBase
+    public static TManager GetManager<TManager>() where TManager : MgrBase
     {
-        if (Managers.TryGetValue(typeof(TManager), out ManagerBase manager))
+        if (Managers.TryGetValue(typeof(TManager), out MgrBase manager))
         {
             return manager as TManager;
         }
@@ -23,7 +23,7 @@ public partial class GameEntry : MonoSingleton<GameEntry>
     /// <summary>
     /// 创建一个管理器
     /// </summary>
-    private static TManager CreateManager<TManager>() where TManager : ManagerBase
+    private static TManager CreateManager<TManager>() where TManager : MgrBase
     {
         TManager manager = Activator.CreateInstance<TManager>() ?? throw new Exception("创建管理器失败...");
         Managers.Add(typeof(TManager), manager);

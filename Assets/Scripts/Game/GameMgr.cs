@@ -1,14 +1,11 @@
 using Assets.Scripts.Common.Manager;
-using Assets.Scripts.Common.UI;
-using Assets.Scripts.Common.Utils;
 using Assets.Scripts.Game.Core;
 using Assets.Scripts.UI;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Game
 {
-    public class GameManager : ManagerBase
+    public class GameMgr : MgrBase
     {
         public enum GameState
         {
@@ -25,19 +22,19 @@ namespace Assets.Scripts.Game
         {
             CurrentGameState = newState;
 
-            GameEntry.UIManager.CloseAll();
+            Entry.UIMgr.CloseAll();
             // You can perform additional actions or setup based on the game state here
             switch (newState)
             {
                 case GameState.Start:
-                    GameEntry.UIManager.OpenUI<MenuUI>();
+                    Entry.UIMgr.OpenUI<MenuUI>();
                     break;
                 case GameState.Game:
-                    GameEntry.UIManager.OpenUI<GameUI>();
-                    GameEntry.CameraController.Init();
+                    Entry.UIMgr.OpenUI<GameUI>();
+                    Entry.CameraController.Init();
                     MapSystem gridSystem = Resources.Load<MapSystem>(ViewConst.Core_Map_MapSystem);
                     Object.Instantiate(gridSystem.gameObject);
-                    GameEntry.TurnSystem.StartGame();
+                    Entry.TurnSystem.StartGame();
                     break;
                 default:
                     break;

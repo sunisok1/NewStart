@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.Game
 {
-    public class TurnSystem : ManagerBase
+    public class TurnSystem : MgrBase
     {
         private readonly LinkedList<Player> playerList = new();
         private LinkedListNode<Player> currentPlayerNode;
@@ -28,7 +28,7 @@ namespace Assets.Scripts.Game
                         Previous = currentPlayerNode?.Value,
                         Current = value.Value
                     };
-                    GameEntry.EventManager.InvokeEvent(EventType.TurnSystem_CurrentPlayerNodeChanged, this, args);
+                    Entry.EventMgr.InvokeEvent(EventType.TurnSystem_CurrentPlayerNodeChanged, this, args);
 
                     currentPlayerNode = value;
                 }
@@ -38,7 +38,7 @@ namespace Assets.Scripts.Game
         public void StartGame()
         {
             // Initialize your player list and set the current player
-            cardPile = new(GameEntry.ConfigManager.GetConfig<List<Card>>("Cardpile"));
+            cardPile = new(Entry.ConfigMgr.GetConfig<List<Card>>("Cardpile"));
             Debug.Log(cardPile.RemainingCardsCount);
             AddPlayer(PlayerFactory.CreatePlayer("测试_1"));
             AddPlayer(PlayerFactory.CreatePlayer("测试_2"));
@@ -69,7 +69,7 @@ namespace Assets.Scripts.Game
         {
             // Add a player to the list
             playerList.AddLast(player);
-            GameEntry.EventManager.InvokeEvent(EventType.TurnSystem_AddPlayer, player, EventArgs.Empty);
+            Entry.EventMgr.InvokeEvent(EventType.TurnSystem_AddPlayer, player, EventArgs.Empty);
         }
 
         public void RemovePlayer(Player player)

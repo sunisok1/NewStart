@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Game.Core;
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -42,6 +43,12 @@ public class CardItem : MonoBehaviour
         }
     }
 
+    internal void SetCardInfo(Card card)
+    {
+        Sprite cardSprite = Entry.ResMgr.Load<Sprite>(ViewConst.image_card + card.ResName);
+        SetCardInfo(cardSprite, card.Rank, card.Suit, card.Name);
+    }
+
     private string GetRankText(int rank)
     {
         return rank switch
@@ -51,7 +58,7 @@ public class CardItem : MonoBehaviour
             11 => "J",
             12 => "Q",
             13 => "K",
-            _ => throw new System.ArgumentOutOfRangeException(),
+            _ => throw new ArgumentOutOfRangeException(),
         };
     }
 
@@ -64,7 +71,7 @@ public class CardItem : MonoBehaviour
             Suit.Heart => "♥",
             Suit.Club => "♣",
             Suit.Spade => "♠",
-            _ => throw new System.ArgumentOutOfRangeException(),
+            _ => throw new ArgumentOutOfRangeException(),
         };
     }
 }
